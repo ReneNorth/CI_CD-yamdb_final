@@ -2,12 +2,13 @@ version: '3.8'
 
 services:
   db:
-    image: postgres:13.0-alpine
+    image: postgres:latest
     volumes:
       - yamdb_data:/var/lib/postgresql/data
     env_file:
       - ./.env
   web:
+    image: yurydenorth/sprint16_p:1
     build: ../api_yamdb
     restart: always
     volumes:
