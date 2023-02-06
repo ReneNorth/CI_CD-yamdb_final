@@ -78,7 +78,6 @@ jobs:
           # echo DB_HOST=${{ secrets.DB_HOST }} >> api_yamdb/api_yamdb/.env
           # echo DB_PORT=${{ secrets.DB_PORT }} >> api_yamdb/api_yamdb/.env
           # sudo docker-compose up -d
-
   send_message:
     runs-on: ubuntu-latest
     needs: deploy
