@@ -77,6 +77,7 @@ jobs:
           # echo DB_HOST=${{ secrets.DB_HOST }} >> api_yamdb/api_yamdb/.env
           # echo DB_PORT=${{ secrets.DB_PORT }} >> api_yamdb/api_yamdb/.env
           # sudo docker-compose up -d
+          
   send_message:
     runs-on: ubuntu-latest
     needs: deploy
@@ -86,4 +87,4 @@ jobs:
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        message: ${{ github.workflow }} успешно выполнен! 
+        message: ${{ github.workflow }} успешно выполнен!
