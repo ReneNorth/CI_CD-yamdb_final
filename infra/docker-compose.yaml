@@ -10,7 +10,8 @@ services:
   web:
     image: yurydenorth/sprint16_p:1
     # build: ./api_yamdb - так работало до этого
-    build: ./api_yamdb
+    # build: ./api_yamdb
+    # build: ../api_yamdb
     restart: always
     volumes:
       - static_value:/app/static/
