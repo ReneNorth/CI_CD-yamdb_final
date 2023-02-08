@@ -12,7 +12,7 @@ load_dotenv(dotenv_path=os.path.abspath(os.path.join(BASE_DIR, f'{os.pardir}/inf
 
 SECRET_KEY = 'p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs'
 DEBUG = False
-ALLOWED_HOSTS = ['84.201.135.161', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['*', 'web', '84.201.135.161', '127.0.0.1', 'localhost']
 
 
 INSTALLED_APPS = [
